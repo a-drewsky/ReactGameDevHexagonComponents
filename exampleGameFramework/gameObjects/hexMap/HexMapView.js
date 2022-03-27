@@ -11,8 +11,8 @@ export default class HexMapViewClass {
 
          let keyObj = this.hexMapData.split(key);
 
-         let xOffset = this.hexMapData.VecQ.x * keyObj.Q + this.hexMapData.VecR.x * keyObj.R;
-         let yOffset = this.hexMapData.VecQ.y * keyObj.Q * this.hexMapData.squish + this.hexMapData.VecR.y * keyObj.R * this.hexMapData.squish;
+         let xOffset = this.hexMapData.VecQ.x * keyObj.q + this.hexMapData.VecR.x * keyObj.r;
+         let yOffset = this.hexMapData.VecQ.y * keyObj.q * this.hexMapData.squish + this.hexMapData.VecR.y * keyObj.r * this.hexMapData.squish;
 
 
          this.drawHexagon(this.hexMapData.x + xOffset, this.hexMapData.y + yOffset, value.color);
